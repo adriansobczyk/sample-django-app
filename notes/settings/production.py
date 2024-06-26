@@ -1,8 +1,8 @@
 from .base import *
 
-ALLOWED_HOSTS = ['https://mojastrona.com']
+ALLOWED_HOSTS = ['https://adriangoit.pythonanywhere.com/']
 X_FRAME_OPTIONS = '*'
-CSRF_TRUSTED_ORIGINS = ['https://mojastrona.com']
+CSRF_TRUSTED_ORIGINS = ['https://adriangoit.pythonanywhere.com/']
 
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
@@ -12,7 +12,7 @@ CSRF_COOKIE_SECURE = True
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': env('DATABASE_NAME'),
         'USER': env('DATABASE_USER'),
         'PASSWORD': env('DATABASE_PASSWORD'),
